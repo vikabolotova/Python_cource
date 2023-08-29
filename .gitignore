@@ -1,0 +1,12 @@
+# created by virtualenv automatically
+
+/venv
+.idea
+
+echo "# Python_cource" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vikabolotova/Python_cource.git
+git push -u origin main
