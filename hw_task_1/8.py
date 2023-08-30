@@ -2,7 +2,6 @@ def abbrvt_stroka(stroka):
     abbrvt = []
     if type(stroka) == str:
         stroka_1 = stroka.upper().split()
-        print(stroka_1)
         #stroka_1 = stroka.split()
         for i in range(len(stroka_1)):
             abbrvt.append(stroka_1[i][0])
