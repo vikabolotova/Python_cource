@@ -20,6 +20,8 @@ class AppleTree:
     def __init__(self,*apples):
         self.apples = list(apples)
 
+
+
     def grow_tree(self):
         for apple in self.apples:
             apple.grow()
@@ -76,4 +78,4 @@ gardener.take_care_of_plants()
 gardener.take_care_of_plants()
 gardener.take_care_of_plants()
 gardener.harvest()
-gardener.harvest()
+
