@@ -147,7 +147,7 @@ gardener.take_care_of_plants()
 
 print("Статистика после ухода за растениями:")
 print(gardener.garden_statistics())
-s
+
 
 gardener.harvest()
 
