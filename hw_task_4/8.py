@@ -12,7 +12,7 @@ class ManipulationCSV:
         file = open ('nlo.csv', 'r')
         file_reader = csv.DictReader(file, delimiter=',')
         self.data_file = list(file_reader)
-        print(self.data_file[:5])
+
 
     def max_country(self):
 
@@ -27,19 +27,16 @@ class ManipulationCSV:
 
 
     def month_nlo_max(self):
-        nmy = []
 
+        nmy = []
         for row in self.data_file:
             country = row['datetime']
             nmy.append(country)
-        print(nmy)
 
         months = []
         for i in nmy:
             res = re.match(r'\d{1,2}/', i)
             months.append(res.group())
-        print(months)
-
         months_count = Counter(months)
         month_max = months_count.most_common(1)
 
