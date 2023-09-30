@@ -21,6 +21,7 @@ class ManipulationCSV:
         for row in self.data_file:
             country = row['country']
             countries.append(country)
+
         country_counts = Counter(countries)
         country_maximum = country_counts.most_common(1)
         return country_maximum[0][0]
